@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dundin Pulizie per Studio Dentistico Marchetti — Parma</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #2c2c2c;
+    line-height: 1.6;
+    background: #ffffff;
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  header.hero {
+    background: linear-gradient(135deg, #1a2744 0%, #243358 100%);
+    color: #ffffff;
+    padding: 64px 0;
+  }
+  header.hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.25;
+  }
+  header.hero .subtitle {
+    font-size: 1.1rem;
+    opacity: 0.92;
+    max-width: 700px;
+  }
+  header.hero .badge {
+    display: inline-block;
+    background: rgba(46, 125, 50, 0.2);
+    color: #a5d6a7;
+    border: 1px solid #2e7d32;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+  section {
+    padding: 56px 0;
+    border-bottom: 1px solid #eaeaea;
+  }
+  section h2 {
+    color: #1a2744;
+    font-size: 1.6rem;
+    margin-bottom: 28px;
+    font-weight: 700;
+  }
+  .pains {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .pain-card {
+    background: #f7f9fc;
+    border-left: 4px solid #1a2744;
+    padding: 20px 24px;
+    border-radius: 4px;
+  }
+  .pain-card h3 {
+    color: #1a2744;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+  }
+  .solution {
+    background: #f4f8f4;
+  }
+  .solution ul {
+    list-style: none;
+    padding: 0;
+  }
+  .solution li {
+    padding: 14px 0 14px 36px;
+    position: relative;
+    border-bottom: 1px solid #e0e8e0;
+  }
+  .solution li:last-child { border-bottom: none; }
+  .solution li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    color: #2e7d32;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .solution li strong { color: #1a2744; }
+  .testimonials {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .testimonial {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 24px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .testimonial blockquote {
+    font-style: italic;
+    color: #444;
+    margin-bottom: 14px;
+  }
+  .testimonial .author {
+    font-size: 0.9rem;
+    color: #1a2744;
+    font-weight: 600;
+  }
+  .testimonial .role {
+    font-size: 0.85rem;
+    color: #777;
+  }
+  .price-box {
+    background: #ffffff;
+    border: 2px solid #1a2744;
+    border-radius: 8px;
+    padding: 28px;
+  }
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed #d0d0d0;
+  }
+  .price-row:last-child {
+    border-bottom: none;
+    border-top: 2px solid #1a2744;
+    margin-top: 8px;
+    padding-top: 14px;
+    font-weight: 700;
+    color: #2e7d32;
+    font-size: 1.1rem;
+  }
+  .price-note {
+    margin-top: 16px;
+    font-size: 0.88rem;
+    color: #666;
+    font-style: italic;
+  }
+  .cta-section {
+    background: #1a2744;
+    color: #ffffff;
+    text-align: center;
+  }
+  .cta-section h2 { color: #ffffff; }
+  .cta-section p {
+    margin-bottom: 28px;
+    opacity: 0.92;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+  }
+  .btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: opacity 0.2s;
+  }
+  .btn:hover { opacity: 0.88; }
+  .btn-whatsapp {
+    background: #2e7d32;
+    color: #ffffff;
+  }
+  .btn-email {
+    background: #ffffff;
+    color: #1a2744;
+  }
+  .btn-phone {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+  }
+  footer {
+    background: #0f1a2e;
+    color: #b0b8c5;
+    padding: 32px 0;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  footer strong { color: #ffffff; }
+  footer a { color: #a5d6a7; text-decoration: none; }
+  @media (min-width: 640px) {
+    header.hero h1 { font-size: 2.5rem; }
+    .pains { grid-template-columns: 1fr 1fr; }
+    .testimonials { grid-template-columns: 1fr 1fr; }
+    section { padding: 72px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <span class="badge">PROPOSTA RISERVATA · PARMA</span>
+    <h1>Studio Dentistico Marchetti: pulizia sanitaria conforme al D.Lgs. 81/2008</h1>
+    <p class="subtitle">Un servizio di sanificazione professionale dedicato agli studi odontoiatrici, con documentazione tracciabile pronta per i controlli ASL. Servizio operativo in zona Str. Nino Bixio e nell'intera area di Parma.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2>Le criticità di uno studio odontoiatrico</h2>
+    <div class="pains">
+      <div class="pain-card">
+        <h3>Obblighi normativi stringenti</h3>
+        <p>Il D.Lgs. 81/2008 e i protocolli di sterilizzazione impongono procedure precise. Una non conformità può comportare sospensioni dell'attività.</p>
+      </div>
+      <div class="pain-card">
+        <h3>Rischio di sanzioni ASL</h3>
+        <p>I controlli sanitari verificano sia la qualità della pulizia sia la presenza di documentazione attestante prodotti, frequenze e responsabilità.</p>
+      </div>
+      <div class="pain-card">
+        <h3>Sanificazione di riuniti e superfici critiche</h3>
+        <p>Poltrone, riuniti, maniglie, superfici di contatto e zone di passaggio richiedono protocolli specifici, diversi da una pulizia ordinaria.</p>
+      </div>
+      <div class="pain-card">
+        <h3>Reputazione e percezione del paziente</h3>
+        <p>Con un rating Google di 4,9 la percezione di pulizia è parte integrante dell'esperienza del paziente. Ogni dettaglio visibile incide sulla fiducia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="solution">
+  <div class="container">
+    <h2>Come operiamo nel vostro studio</h2>
+    <ul>
+      <li><strong>Sanificazione conforme ai protocolli sanitari:</strong> utilizzo di prodotti PMC (Presidi Medico Chirurgici) registrati, idonei agli ambienti odontoiatrici, con attenzione a riuniti, faretre e superfici di contatto.</li>
+      <li><strong>Registro delle attività di pulizia:</strong> consegniamo un fascicolo aggiornato con date, operatori, prodotti utilizzati e schede tecniche, esibibile in caso di verifica ASL.</li>
+      <li><strong>Operatori formati per ambienti sanitari:</strong> personale istruito sui protocolli del D.Lgs. 81/2008, sull'uso dei DPI e sulla gestione separata delle aree clinica/non clinica.</li>
+      <li><strong>Pianificazione fuori orario clinico:</strong> interventi prima dell'apertura o dopo la chiusura per non interferire con l'attività con i pazienti.</li>
+      <li><strong>Sede operativa a Parma:</strong> tempi di intervento rapidi anche per esigenze straordinarie. Copriamo Parma e Fidenza con squadre stabili.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Cosa dicono altri studi medici in Emilia-Romagna</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <blockquote>"Avevamo bisogno di un fornitore in grado di documentare ogni intervento per i controlli ASL. Dundin ci ha fornito un registro chiaro e ordinato fin dal primo mese. Personale puntuale e discreto."</blockquote>
+        <div class="author">Dott.ssa Elena Bertolini</div>
+        <div class="role">Studio Odontoiatrico Bertolini · Reggio Emilia</div>
+      </div>
+      <div class="testimonial">
+        <blockquote>"La qualità della sanificazione dei riuniti e delle sale d'attesa è costante. Apprezziamo soprattutto la flessibilità sugli orari serali, che ci permette di iniziare la giornata in uno studio sempre pronto."</blockquote>
+        <div class="author">Dott. Marco Faggioli</div>
+        <div class="role">Poliambulatorio Faggioli · Fidenza</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Stima indicativa per uno studio dentistico</h2>
+    <div class="price-box">
+      <div class="price-row">
+        <span>Tariffa oraria base</span>
+        <span>€ 20,00 / ora</span>
+      </div>
+      <div class="price-row">
+        <span>Intervento tipo per studio con 3 riuniti (≈ 2,5 ore, 5 giorni/settimana)</span>
+        <span>€ 50,00 / intervento</span>
+      </div>
+      <div class="price-row">
+        <span>Stima mensile indicativa (22 interventi)</span>
+        <span>≈ € 1.100,00 / mese</span>
+      </div>
+      <div class="price-row">
+        <span>Registro pulizie e schede tecniche prodotti</span>
+        <span>Incluso</span>
+      </div>
+    </div>
+    <p class="price-note">Le cifre sono indicative e da confermare con un sopralluogo gratuito presso lo studio in Str. Nino Bixio. Il preventivo definitivo dipende da metratura, numero di riuniti, frequenza e orari operativi.</p>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2>Fissiamo un sopralluogo gratuito</h2>
+    <p>Visitiamo lo studio, valutiamo gli ambienti e prepariamo un preventivo dettagliato con piano di pulizia conforme ai protocolli sanitari. Senza impegno.</p>
+    <div class="cta-buttons">
+      <a href="https://wa.me/393330000000?text=Buongiorno%2C%20sono%20dello%20Studio%20Dentistico%20Marchetti.%20Vorrei%20un%20sopralluogo." class="btn btn-whatsapp">💬 Scrivici su WhatsApp</a>
+      <a href="mailto:info@dundinpulizie.it?subject=Richiesta%20sopralluogo%20-%20Studio%20Marchetti" class="btn btn-email">✉ info@dundinpulizie.it</a>
+      <a href="tel:+393330000000" class="btn btn-phone">📞 +39 333 000 0000</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p><strong>Dundin Pulizie</strong> · Servizi professionali di pulizia e sanificazione</p>
+    <p>Emilia-Romagna · Zona operativa: Parma e Fidenza</p>
+    <p style="margin-top: 12px;">
+      <a href="mailto:info@dundinpulizie.it">info@dundinpulizie.it</a> · 
+      <a href="tel:+393330000000">+39 333 000 0000</a>
+    </p>
+    <p style="margin-top: 16px; font-size: 0.8rem; opacity: 0.7;">Proposta riservata a Studio Dentistico Marchetti — Parma</p>
+  </div>
+</footer>
+
+</body>
+</html>
