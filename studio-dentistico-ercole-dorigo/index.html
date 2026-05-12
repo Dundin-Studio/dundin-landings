@@ -4,95 +4,286 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pulizie Professionali per Studio Dentistico Ercole Dorigo | Dundin Pulizie</title>
-<meta name="description" content="Servizio di pulizia e sanificazione conforme al D.Lgs. 81/2008 per lo Studio Dentistico Ercole Dorigo a Parma. Documentazione completa per i controlli ASL.">
 <style>
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:system-ui,-apple-system,sans-serif;line-height:1.6;color:#333;background:#fff}
-  .container{max-width:960px;margin:0 auto;padding:0 24px}
-  header{background:linear-gradient(135deg,#1a2744 0%,#2a3a5e 100%);color:#fff;padding:60px 0}
-  header h1{font-size:2.2rem;margin-bottom:16px;line-height:1.3}
-  header .subtitle{font-size:1.15rem;opacity:.92;max-width:720px}
-  header .badge{display:inline-block;background:rgba(46,125,50,.25);border:1px solid #4caf50;color:#c8e6c9;padding:6px 14px;border-radius:20px;font-size:.85rem;margin-bottom:20px;font-weight:500}
-  section{padding:56px 0;border-bottom:1px solid #eee}
-  section h2{color:#1a2744;font-size:1.7rem;margin-bottom:28px;line-height:1.3}
-  .pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:24px}
-  .pain-card{background:#f7f9fc;border-left:4px solid #c62828;padding:22px;border-radius:6px}
-  .pain-card .icon{font-size:1.6rem;margin-bottom:10px;display:block}
-  .pain-card h3{color:#1a2744;font-size:1.05rem;margin-bottom:8px}
-  .pain-card p{font-size:.95rem;color:#555}
-  .solution-list{list-style:none;margin-top:20px}
-  .solution-list li{padding:14px 0 14px 40px;position:relative;border-bottom:1px solid #f0f0f0}
-  .solution-list li:before{content:"✓";position:absolute;left:0;top:14px;color:#2e7d32;font-weight:bold;font-size:1.3rem;width:28px;height:28px;background:#e8f5e9;border-radius:50%;display:flex;align-items:center;justify-content:center}
-  .solution-list li strong{color:#1a2744}
-  .testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:24px}
-  .testimonial{background:#fff;border:1px solid #e0e0e0;padding:24px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-  .testimonial .stars{color:#f9a825;margin-bottom:10px}
-  .testimonial p{font-style:italic;color:#444;margin-bottom:14px}
-  .testimonial .author{font-weight:600;color:#1a2744;font-size:.95rem}
-  .testimonial .role{font-size:.85rem;color:#777}
-  .pricing{background:#f7f9fc;border-radius:10px;padding:32px;margin-top:24px}
-  .pricing .rate{font-size:2.2rem;color:#2e7d32;font-weight:700;margin-bottom:8px}
-  .pricing .rate small{font-size:1rem;color:#666;font-weight:400}
-  .pricing-example{background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:20px;margin-top:20px}
-  .pricing-example h4{color:#1a2744;margin-bottom:12px}
-  .pricing-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed #eee}
-  .pricing-row:last-child{border-bottom:none;font-weight:700;color:#1a2744;padding-top:14px;margin-top:6px;border-top:2px solid #1a2744}
-  .pricing-note{font-size:.85rem;color:#777;margin-top:14px;font-style:italic}
-  .cta{background:#1a2744;color:#fff;text-align:center;padding:60px 24px}
-  .cta h2{color:#fff;font-size:1.7rem;margin-bottom:14px}
-  .cta p{margin-bottom:28px;opacity:.9;max-width:600px;margin-left:auto;margin-right:auto}
-  .cta-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
-  .btn{display:inline-block;padding:14px 28px;border-radius:6px;text-decoration:none;font-weight:600;font-size:1rem;transition:transform .15s}
-  .btn:hover{transform:translateY(-2px)}
-  .btn-wa{background:#25d366;color:#fff}
-  .btn-phone{background:#2e7d32;color:#fff}
-  .btn-email{background:#fff;color:#1a2744}
-  .contact-info{font-size:.95rem;opacity:.85;margin-top:10px}
-  .contact-info a{color:#a5d6a7;text-decoration:none}
-  footer{background:#0f1a2e;color:#aaa;padding:28px 0;font-size:.88rem;text-align:center}
-  footer strong{color:#fff}
-  @media (max-width:640px){
-    header{padding:44px 0}
-    header h1{font-size:1.6rem}
-    header .subtitle{font-size:1rem}
-    section{padding:40px 0}
-    section h2{font-size:1.4rem}
-    .pricing{padding:22px}
-    .pricing .rate{font-size:1.8rem}
-    .cta h2{font-size:1.4rem}
-    .btn{width:100%;padding:14px 20px}
-  }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.hero {
+  background: linear-gradient(135deg, #1a2744 0%, #2c3e5f 100%);
+  color: #fff;
+  padding: 70px 20px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+.hero .subtitle {
+  font-size: 1.15rem;
+  opacity: 0.95;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.hero .badge {
+  display: inline-block;
+  background: rgba(46, 125, 50, 0.25);
+  border: 1px solid #4caf50;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+section {
+  padding: 60px 20px;
+}
+section h2 {
+  color: #1a2744;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  border-left: 5px solid #2e7d32;
+  padding-left: 15px;
+}
+.pain-section {
+  background: #f7f9fc;
+}
+.pain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.pain-card {
+  background: #fff;
+  padding: 28px;
+  border-radius: 8px;
+  border-top: 4px solid #c0392b;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.pain-card .icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.pain-card h3 {
+  color: #1a2744;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.pain-card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+.solution-list {
+  list-style: none;
+}
+.solution-list li {
+  padding: 18px 0 18px 40px;
+  position: relative;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+.solution-list li:last-child { border-bottom: none; }
+.solution-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 18px;
+  color: #2e7d32;
+  font-weight: bold;
+  font-size: 1.4rem;
+  width: 28px;
+  height: 28px;
+  background: #e8f5e9;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 28px;
+}
+.credibility {
+  background: #1a2744;
+  color: #fff;
+}
+.credibility h2 {
+  color: #fff;
+  border-left-color: #4caf50;
+}
+.cred-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+.cred-item {
+  background: rgba(255,255,255,0.05);
+  padding: 24px;
+  border-radius: 8px;
+  border-left: 3px solid #4caf50;
+}
+.cred-item h4 {
+  color: #8bc34a;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.cred-item p {
+  font-size: 0.95rem;
+  color: #d0d5de;
+}
+.estimate {
+  background: #f7f9fc;
+}
+.estimate-box {
+  background: #fff;
+  border: 2px solid #2e7d32;
+  border-radius: 10px;
+  padding: 35px;
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.price-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 25px 0;
+}
+.price-item {
+  flex: 1;
+  min-width: 200px;
+}
+.price-item .label {
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.price-item .value {
+  font-size: 2rem;
+  color: #2e7d32;
+  font-weight: bold;
+  margin-top: 6px;
+}
+.price-item .value small {
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: normal;
+}
+.disclaimer {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 20px;
+  font-style: italic;
+  line-height: 1.5;
+}
+.cta {
+  background: linear-gradient(135deg, #2e7d32 0%, #1b5e20 100%);
+  color: #fff;
+  text-align: center;
+}
+.cta h2 {
+  color: #fff;
+  border: none;
+  padding: 0;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+.btn-whatsapp {
+  background: #25d366;
+  color: #fff;
+}
+.btn-phone {
+  background: #fff;
+  color: #1a2744;
+}
+.btn-email {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+footer {
+  background: #0f1a2e;
+  color: #aab2c0;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+footer strong { color: #fff; }
+footer a { color: #8bc34a; text-decoration: none; }
+@media (max-width: 640px) {
+  .hero { padding: 50px 20px; }
+  .hero h1 { font-size: 1.6rem; }
+  .hero .subtitle { font-size: 1rem; }
+  section { padding: 45px 15px; }
+  section h2 { font-size: 1.4rem; }
+  .estimate-box { padding: 25px 18px; }
+  .price-item .value { font-size: 1.6rem; }
+  .cta h2 { font-size: 1.5rem; }
+  .btn { padding: 14px 24px; width: 100%; }
+}
 </style>
 </head>
 <body>
 
-<header>
+<section class="hero">
   <div class="container">
-    <span class="badge">📋 Proposta riservata allo Studio Dentistico Ercole Dorigo</span>
-    <h1>Pulizia e sanificazione conformi per il Suo studio dentistico a Parma</h1>
-    <p class="subtitle">Un servizio dedicato agli studi odontoiatrici, con protocolli scritti e documentazione pronta per i controlli ASL e per la verifica del D.Lgs. 81/2008.</p>
+    <div class="badge">PROPOSTA RISERVATA · PARMA</div>
+    <h1>Studio Dentistico Ercole Dorigo: igiene ambientale conforme al D.Lgs. 81/2008, documentata e pronta per le ispezioni ASL</h1>
+    <p class="subtitle">Una proposta dedicata di Dundin Pulizie per uno studio dentistico che, dopo anni di attività consolidata a Parma, merita un partner specializzato negli ambienti sanitari — non un servizio generico.</p>
   </div>
-</header>
+</section>
 
-<section>
+<section class="pain-section">
   <div class="container">
-    <h2>Le criticità di uno studio dentistico oggi</h2>
-    <p style="color:#555;max-width:720px">Gestire uno studio odontoiatrico significa rispondere a obblighi normativi sempre più stringenti. Sappiamo che il Suo studio opera in via Brunetto Bucciarelli Ducci da diversi anni con buona reputazione: proprio per questo riteniamo utile sottoporLe una valutazione sui punti che, dalla nostra esperienza con altri studi della zona, rappresentano i rischi più frequenti.</p>
+    <h2>Le criticità reali di uno studio dentistico oggi</h2>
     <div class="pain-grid">
       <div class="pain-card">
-        <span class="icon">⚖️</span>
-        <h3>Conformità al D.Lgs. 81/2008</h3>
-        <p>Le pulizie eseguite senza protocollo scritto e senza tracciabilità espongono il datore di lavoro a responsabilità dirette in caso di ispezione o contestazione.</p>
+        <div class="icon">⚠️</div>
+        <h3>Controlli ASL e rischio sanzioni</h3>
+        <p>Le ispezioni dell'Azienda Sanitaria Locale verificano protocolli di sanificazione, registri e tracciabilità. Una pulizia non documentata espone lo studio a richiami formali e sanzioni amministrative.</p>
       </div>
       <div class="pain-card">
-        <span class="icon">🔍</span>
-        <h3>Controlli ASL e sanzioni</h3>
-        <p>L'assenza di schede tecniche dei prodotti, registri di sanificazione e procedure documentate è una delle non conformità più frequenti rilevate negli studi odontoiatrici.</p>
+        <div class="icon">🦠</div>
+        <h3>Disinfezione di riuniti e superfici critiche</h3>
+        <p>Riuniti odontoiatrici, lampade scialitiche, maniglie, superfici di contatto: richiedono prodotti PMC (Presidi Medico Chirurgici) e procedure specifiche che pochi addetti non specializzati conoscono.</p>
       </div>
       <div class="pain-card">
-        <span class="icon">🦷</span>
-        <h3>Sanificazione di riuniti e superfici</h3>
-        <p>Riuniti, faretre, riflettori, maniglie e zone di contatto richiedono prodotti specifici e procedure mirate, non assimilabili alla pulizia ordinaria di un ufficio.</p>
+        <div class="icon">📋</div>
+        <h3>Assenza di tracciabilità documentale</h3>
+        <p>Senza schede tecniche dei prodotti, registri degli interventi e protocolli scritti, in caso di ispezione o contenzioso è difficile dimostrare la corretta gestione dell'igiene ambientale.</p>
       </div>
     </div>
   </div>
@@ -100,77 +291,84 @@
 
 <section>
   <div class="container">
-    <h2>La nostra proposta operativa</h2>
-    <p style="color:#555;max-width:720px">Dundin Pulizie è specializzata nella pulizia di ambienti sanitari in Emilia-Romagna. Per lo Studio Dentistico Ercole Dorigo proponiamo un servizio strutturato sui seguenti elementi:</p>
+    <h2>Come Dundin Pulizie risponde a queste esigenze</h2>
     <ul class="solution-list">
-      <li><strong>Protocollo di sanificazione dedicato</strong> per sala d'attesa, sale operative, area sterilizzazione e servizi igienici, con frequenze e prodotti definiti per ciascuna area.</li>
-      <li><strong>Disinfezione di riuniti, riflettori e superfici di contatto</strong> con detergenti PMC registrati al Ministero della Salute, idonei all'uso in ambito odontoiatrico.</li>
-      <li><strong>Registro cartaceo e digitale degli interventi</strong> firmato dall'operatore: data, ora, aree trattate, prodotti utilizzati. Pronto da esibire in caso di ispezione ASL.</li>
-      <li><strong>Schede tecniche e di sicurezza (SDS)</strong> di tutti i prodotti impiegati, fornite e aggiornate, come previsto dal D.Lgs. 81/2008.</li>
-      <li><strong>Personale formato</strong> sul rischio biologico e sulla corretta gestione dei DPI in ambito sanitario.</li>
-      <li><strong>Referente unico</strong> per lo studio, raggiungibile direttamente per modifiche di orari, interventi straordinari o richieste specifiche.</li>
+      <li><strong>Protocollo di sanificazione conforme al D.Lgs. 81/2008</strong> redatto per ambienti odontoiatrici, con distinzione tra aree cliniche (riuniti, sale operative), aree filtro e aree amministrative.</li>
+      <li><strong>Utilizzo esclusivo di prodotti PMC registrati presso il Ministero della Salute</strong> per la disinfezione di superfici a contatto con il paziente, in linea con le linee guida ISS per gli studi odontoiatrici.</li>
+      <li><strong>Registro interventi cartaceo e digitale</strong>: ogni passaggio viene documentato con data, operatore, aree trattate e prodotti utilizzati — pronto da esibire in caso di controllo ASL.</li>
+      <li><strong>Schede di sicurezza (SDS) di tutti i prodotti</strong> consegnate allo studio e aggiornate periodicamente, come previsto dalla normativa sulla salute dei lavoratori.</li>
+      <li><strong>Personale formato sul rischio biologico</strong> e sull'uso dei DPI specifici per gli ambienti sanitari, con turnover ridotto per garantire continuità e affidabilità.</li>
+      <li><strong>Programma flessibile</strong>: interventi giornalieri di mantenimento al termine dell'attività clinica, più sanificazioni periodiche approfondite secondo un piano concordato con la direzione sanitaria.</li>
     </ul>
   </div>
 </section>
 
-<section>
+<section class="credibility">
   <div class="container">
-    <h2>Cosa dicono altri studi della zona</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <p>"Abbiamo cambiato fornitore proprio per la questione della documentazione. Dundin ci ha fornito da subito protocollo scritto e registro degli interventi: in occasione dell'ultima verifica ASL non abbiamo avuto rilievi sulla parte di sanificazione."</p>
-        <div class="author">Dott.ssa Chiara Mengoli</div>
-        <div class="role">Studio Odontoiatrico, Reggio Emilia</div>
+    <h2>Perché Dundin Pulizie è la scelta competente</h2>
+    <div class="cred-grid">
+      <div class="cred-item">
+        <h4>Quadro normativo</h4>
+        <p>Operiamo nel rispetto del D.Lgs. 81/2008 (Testo Unico Sicurezza Lavoro), dei protocolli ASL per gli ambienti sanitari e dei principi HACCP applicati alle aree filtro.</p>
       </div>
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <p>"Servizio puntuale e personale che conosce bene le esigenze di uno studio dentistico. La differenza si nota soprattutto sulla disinfezione dei riuniti e nella gestione delle schede di sicurezza, che prima dovevamo ricostruire da soli."</p>
-        <div class="author">Dott. Marco Tagliavini</div>
-        <div class="role">Poliambulatorio Odontoiatrico, Modena</div>
+      <div class="cred-item">
+        <h4>Specializzazione sanitaria</h4>
+        <p>Lavoriamo con studi medici e poliambulatori in Emilia-Romagna: conosciamo le esigenze operative degli ambienti clinici, dai tempi di sanificazione tra un paziente e l'altro alla gestione dei rifiuti speciali assimilabili.</p>
+      </div>
+      <div class="cred-item">
+        <h4>Radicamento territoriale</h4>
+        <p>Zona di servizio: Parma e Fidenza. Tempi di intervento rapidi, referenti locali, capacità di adattarci al ritmo dello studio senza interferire con l'attività clinica.</p>
+      </div>
+      <div class="cred-item">
+        <h4>Tracciabilità documentale</h4>
+        <p>Ogni servizio è accompagnato da documentazione formale: piano di sanificazione, registri, schede prodotto. Argomenti concreti da presentare in caso di ispezione.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<section class="estimate">
   <div class="container">
-    <h2>Una stima trasparente per il Suo studio</h2>
-    <div class="pricing">
-      <div class="rate">€20<small>/ora — tariffa base</small></div>
-      <p style="color:#555">La tariffa comprende manodopera qualificata, prodotti professionali certificati per uso sanitario e attrezzature dedicate.</p>
-
-      <div class="pricing-example">
-        <h4>Esempio indicativo per uno studio dentistico medio (≈ 90 m², 2 sale operative)</h4>
-        <div class="pricing-row"><span>Pulizia e sanificazione giornaliera (1,5 h × 5 giorni)</span><span>€150/sett.</span></div>
-        <div class="pricing-row"><span>Intervento approfondito settimanale (2 h)</span><span>€40/sett.</span></div>
-        <div class="pricing-row"><span>Documentazione, registri e schede tecniche</span><span>inclusi</span></div>
-        <div class="pricing-row"><span>Stima mensile indicativa</span><span>≈ €760</span></div>
+    <h2>Stima indicativa</h2>
+    <div class="estimate-box">
+      <p style="color:#555; margin-bottom: 10px;">Riferimento economico per uno studio dentistico tipo nella zona di Parma:</p>
+      <div class="price-row">
+        <div class="price-item">
+          <div class="label">Tariffa oraria</div>
+          <div class="value">€20<small>/ora</small></div>
+        </div>
+        <div class="price-item">
+          <div class="label">Stima mensile (nicchia)</div>
+          <div class="value">€480<small>/mese</small></div>
+        </div>
       </div>
-      <p class="pricing-note">Il preventivo definitivo viene formulato dopo un sopralluogo gratuito, in funzione della metratura effettiva, del numero di sale e delle frequenze richieste.</p>
+      <p class="disclaimer">Stima basata su un protocollo standard per la nicchia. Il preventivo definitivo dipende dalla metratura effettiva, dal numero di postazioni e dalla frequenza degli interventi, da definire durante il sopralluogo gratuito.</p>
     </div>
   </div>
 </section>
 
 <section class="cta">
   <div class="container">
-    <h2>Sopralluogo gratuito e senza impegno</h2>
-    <p>Possiamo concordare un breve incontro presso il Suo studio per valutare gli ambienti e predisporre un preventivo dettagliato, comprensivo del protocollo di sanificazione e della documentazione necessaria.</p>
+    <h2>Prenotiamo un sopralluogo gratuito</h2>
+    <p>Veniamo presso il vostro studio, valutiamo gli spazi e le esigenze operative, e vi consegniamo un piano di sanificazione su misura — senza impegno.</p>
     <div class="cta-buttons">
-      <a href="https://wa.me/393330000000" class="btn btn-wa">💬 Scrivici su WhatsApp</a>
+      <a href="https://wa.me/393330000000" class="btn btn-whatsapp">💬 Scrivici su WhatsApp</a>
       <a href="tel:+393330000000" class="btn btn-phone">📞 +39 333 000 0000</a>
-      <a href="mailto:info@dundinpulizie.it?subject=Richiesta%20sopralluogo%20-%20Studio%20Dorigo" class="btn btn-email">✉️ info@dundinpulizie.it</a>
-    </div>
-    <div class="contact-info">
-      Rispondiamo entro 24 ore lavorative · Zona di servizio: Parma e Fidenza
+      <a href="mailto:info@dundinpulizie.it" class="btn btn-email">✉️ Email</a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <strong>Dundin Pulizie</strong> — Servizi di pulizia professionale per ambienti sanitari<br>
-    Emilia-Romagna · Parma e Fidenza · info@dundinpulizie.it · +39 333 000 0000
+    <p><strong>Dundin Pulizie</strong> · Servizi di pulizia e sanificazione professionale per ambienti sanitari</p>
+    <p style="margin-top: 8px;">Emilia-Romagna · Zona di servizio: Parma e Fidenza</p>
+    <p style="margin-top: 8px;">
+      📞 +39 333 000 0000 ·
+      <a href="https://wa.me/393330000000">WhatsApp</a> ·
+      <a href="mailto:info@dundinpulizie.it">info@dundinpulizie.it</a>
+    </p>
+    <p style="margin-top: 16px; font-size: 0.8rem; opacity: 0.7;">Proposta riservata a Studio Dentistico Ercole Dorigo — Parma</p>
   </div>
 </footer>
 

@@ -3,140 +3,289 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pulizie sanitarie per Ambulatorio di Odontoiatria Gervasi Pedroni — Dundin Pulizie</title>
+<title>Proposta dedicata — Ambulatorio di Odontoiatria Gervasi Pedroni</title>
 <style>
-  *,*::before,*::after{box-sizing:border-box}
-  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#222;line-height:1.6;background:#fff}
-  h1,h2,h3{color:#1a2744;line-height:1.25;margin:0 0 .6em}
-  h1{font-size:2rem}
-  h2{font-size:1.5rem;margin-top:0}
-  p{margin:0 0 1em}
-  .container{max-width:880px;margin:0 auto;padding:48px 24px}
-  .hero{background:linear-gradient(135deg,#f4f7fc 0%,#eaf1fb 100%);border-bottom:4px solid #1a2744}
-  .hero .badge{display:inline-block;background:#1a2744;color:#fff;padding:6px 14px;border-radius:20px;font-size:.85rem;letter-spacing:.5px;margin-bottom:18px}
-  .hero p.lead{font-size:1.1rem;color:#3a4862;max-width:680px}
-  section{padding:48px 0;border-bottom:1px solid #ececec}
-  section:last-of-type{border-bottom:none}
-  .pain-list,.solution-list{list-style:none;padding:0;margin:0}
-  .pain-list li,.solution-list li{background:#fff;border-left:4px solid #1a2744;padding:16px 20px;margin-bottom:14px;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
-  .solution-list li{border-left-color:#2e7d32}
-  .solution-list li strong{color:#2e7d32}
-  .testimonials{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-  .testimonial{background:#fafbfd;border:1px solid #e3e8f0;border-radius:8px;padding:22px}
-  .testimonial p.quote{font-style:italic;color:#333}
-  .testimonial .author{font-size:.9rem;color:#1a2744;font-weight:600;margin-top:10px}
-  .stars{color:#f5b400;margin-bottom:8px}
-  .price-box{background:#1a2744;color:#fff;border-radius:10px;padding:30px;text-align:center}
-  .price-box h2{color:#fff}
-  .price-row{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.15)}
-  .price-row:last-child{border-bottom:none;font-weight:700;font-size:1.15rem;color:#a7e0a9}
-  .price-row span:last-child{font-weight:600}
-  .cta{background:#2e7d32;color:#fff;border-radius:10px;padding:36px 28px;text-align:center}
-  .cta h2{color:#fff}
-  .cta p{color:#e8f5e9}
-  .btn-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:20px}
-  .btn{display:inline-block;padding:14px 26px;border-radius:6px;text-decoration:none;font-weight:600;font-size:1rem;transition:transform .15s ease}
-  .btn:hover{transform:translateY(-1px)}
-  .btn-primary{background:#fff;color:#2e7d32}
-  .btn-secondary{background:#1a2744;color:#fff}
-  .btn-outline{background:transparent;color:#fff;border:2px solid #fff}
-  footer{background:#0f1a2e;color:#b8c2d4;padding:30px 24px;text-align:center;font-size:.9rem}
-  footer strong{color:#fff}
-  @media (max-width:640px){
-    .container{padding:32px 18px}
-    h1{font-size:1.6rem}
-    h2{font-size:1.3rem}
-    .testimonials{grid-template-columns:1fr}
-    section{padding:36px 0}
-    .price-row{font-size:.95rem}
-  }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #ffffff;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+header.hero {
+  background: linear-gradient(135deg, #1a2744 0%, #2a3d5f 100%);
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+header.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 18px;
+  line-height: 1.25;
+}
+header.hero .tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.12);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+header.hero p {
+  font-size: 1.1rem;
+  opacity: 0.92;
+  max-width: 680px;
+  margin: 0 auto;
+}
+section { padding: 50px 20px; }
+section:nth-of-type(even) { background: #f7f9fc; }
+h2 {
+  color: #1a2744;
+  font-size: 1.55rem;
+  margin-bottom: 24px;
+  border-left: 4px solid #2e7d32;
+  padding-left: 14px;
+}
+h3 {
+  color: #1a2744;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.pain-grid, .solution-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr;
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #e3e8ef;
+  border-radius: 8px;
+  padding: 22px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.card.pain { border-left: 4px solid #c0392b; }
+.card.sol { border-left: 4px solid #2e7d32; }
+.card p { color: #4a5568; font-size: 0.97rem; }
+.credentials ul {
+  list-style: none;
+  padding: 0;
+}
+.credentials li {
+  background: #ffffff;
+  border: 1px solid #e3e8ef;
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 42px;
+}
+.credentials li::before {
+  content: "✓";
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  color: #2e7d32;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.estimate-box {
+  background: #ffffff;
+  border: 2px solid #2e7d32;
+  border-radius: 10px;
+  padding: 28px;
+  text-align: center;
+}
+.estimate-box .rate {
+  font-size: 2rem;
+  color: #1a2744;
+  font-weight: 700;
+  margin: 12px 0;
+}
+.estimate-box .rate small {
+  font-size: 1rem;
+  color: #4a5568;
+  font-weight: normal;
+}
+.estimate-box .monthly {
+  background: #f1f8f2;
+  padding: 14px;
+  border-radius: 6px;
+  margin: 18px 0;
+  font-size: 1.1rem;
+  color: #1a2744;
+}
+.estimate-box .disclaimer {
+  font-size: 0.88rem;
+  color: #6b7280;
+  font-style: italic;
+  margin-top: 14px;
+  line-height: 1.5;
+}
+.cta {
+  background: linear-gradient(135deg, #2e7d32 0%, #1e5f24 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+.cta h2 {
+  color: #ffffff;
+  border-left: none;
+  padding-left: 0;
+  font-size: 1.7rem;
+}
+.cta p { margin-bottom: 26px; font-size: 1.05rem; opacity: 0.95; }
+.btn-group {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.btn-wa {
+  background: #25d366;
+  color: #ffffff;
+}
+.btn-phone {
+  background: #ffffff;
+  color: #1a2744;
+}
+.btn-mail {
+  background: rgba(255,255,255,0.15);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.4);
+}
+.btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.18); }
+footer {
+  background: #0f1a2e;
+  color: #b8c2d1;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+footer strong { color: #ffffff; }
+footer a { color: #b8c2d1; text-decoration: none; }
+@media (max-width: 640px) {
+  header.hero { padding: 40px 16px; }
+  header.hero h1 { font-size: 1.5rem; }
+  header.hero p { font-size: 1rem; }
+  section { padding: 36px 16px; }
+  h2 { font-size: 1.3rem; }
+  .estimate-box .rate { font-size: 1.6rem; }
+  .btn { width: 100%; }
+}
 </style>
 </head>
 <body>
 
 <header class="hero">
   <div class="container">
-    <span class="badge">Pulizie sanitarie professionali · Parma</span>
-    <h1>Ambulatorio di Odontoiatria Gervasi Pedroni: la pulizia del vostro studio all'altezza del vostro 5,0 su Google</h1>
-    <p class="lead">Uno studio dentistico con 46 recensioni a punteggio pieno costruisce la propria reputazione anche sull'igiene percepita e documentata. Dundin Pulizie offre un servizio dedicato agli ambulatori odontoiatrici di Parma, conforme alle normative vigenti e supportato da documentazione tracciabile.</p>
+    <span class="tag">PROPOSTA DEDICATA · PARMA</span>
+    <h1>Ambulatorio di Odontoiatria Gervasi Pedroni: pulizia sanitaria conforme al D.Lgs. 81/2008</h1>
+    <p>Un protocollo di sanificazione specifico per gli studi dentistici, pensato per proteggere pazienti, personale e la vostra serenità di fronte a un eventuale controllo ASL.</p>
   </div>
 </header>
 
 <section>
   <div class="container">
-    <h2>Le criticità di uno studio odontoiatrico oggi</h2>
-    <ul class="pain-list">
-      <li><strong>Conformità al D.Lgs. 81/2008 e ai protocolli di sanificazione:</strong> riuniti, faretre, superfici di contatto e zone operative richiedono procedure specifiche, non assimilabili a una pulizia ordinaria di ufficio.</li>
-      <li><strong>Controlli ASL e rischio sanzioni:</strong> un'ispezione può richiedere registri di sanificazione, schede tecniche dei prodotti utilizzati e tracciabilità degli interventi. La loro assenza espone lo studio a contestazioni.</li>
-      <li><strong>Carico operativo sul personale clinico:</strong> assistenti e igienisti spesso assorbono mansioni di pulizia che sottraggono tempo all'attività ambulatoriale e non garantiscono lo standard atteso da un ambiente sanitario.</li>
-    </ul>
+    <h2>Le criticità reali di uno studio dentistico</h2>
+    <div class="pain-grid">
+      <div class="card pain">
+        <h3>Protocolli sanitari sotto la lente del D.Lgs. 81/2008</h3>
+        <p>La sanificazione dei riuniti, delle superfici di contatto e delle aree di sterilizzazione richiede procedure codificate. Una pulizia generica non basta a garantire la conformità ai protocolli di igiene odontoiatrica.</p>
+      </div>
+      <div class="card pain">
+        <h3>Rischio di ispezioni ASL e sanzioni</h3>
+        <p>I controlli sulle strutture sanitarie ambulatoriali sono sempre più frequenti in Emilia-Romagna. In assenza di documentazione tracciabile sugli interventi di pulizia e disinfezione, le contestazioni amministrative sono concrete.</p>
+      </div>
+      <div class="card pain">
+        <h3>Pulizia gestita internamente o da fornitori non specializzati</h3>
+        <p>Affidare la sanificazione al personale clinico sottrae tempo alle attività cliniche; affidarla a imprese non specializzate in ambito sanitario espone allo stesso rischio normativo, senza i benefici di un protocollo documentato.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<section style="background:#f9fafc">
+<section>
   <div class="container">
-    <h2>La nostra proposta operativa</h2>
-    <ul class="solution-list">
-      <li><strong>Sanificazione conforme ai protocolli sanitari:</strong> utilizzo di disinfettanti PMC (Presidio Medico Chirurgico) registrati presso il Ministero della Salute, con specifica azione battericida, fungicida e virucida sulle superfici di area operativa.</li>
-      <li><strong>Protocollo dedicato al riunito odontoiatrico:</strong> trattamento di lampada scialitica, bracci, riflettori, pulsantiere, sputacchiera e poltrona con prodotti compatibili con i materiali clinici, senza intaccare le superfici.</li>
-      <li><strong>Registro interventi e schede tecniche pronte per l'ASL:</strong> ogni intervento viene documentato con data, operatore, prodotti utilizzati e aree trattate. Tutta la documentazione è consegnata allo studio e disponibile in caso di ispezione.</li>
-      <li><strong>Orari compatibili con l'attività clinica:</strong> interventi serali o nei momenti di chiusura per non interferire con le visite e garantire l'apertura del giorno successivo in condizioni ottimali.</li>
-      <li><strong>Personale formato sul rischio biologico:</strong> operatori istruiti sulla gestione dei rifiuti sanitari e sul rispetto delle zone a contaminazione differenziata.</li>
+    <h2>La nostra risposta operativa</h2>
+    <div class="solution-grid">
+      <div class="card sol">
+        <h3>Protocollo specifico per studi odontoiatrici</h3>
+        <p>Disinfezione di riuniti, lampade scialitiche, maniglie, superfici di contatto frequente e zone di attesa con prodotti registrati come Presidi Medico-Chirurgici (PMC), nel rispetto delle indicazioni ISS per gli ambulatori.</p>
+      </div>
+      <div class="card sol">
+        <h3>Separazione delle aree per livello di rischio</h3>
+        <p>Distinguiamo aree cliniche, zona sterilizzazione, sala d'attesa e servizi igienici con materiali e panni codificati a colore, per evitare contaminazioni crociate — uno standard atteso in qualsiasi audit sanitario.</p>
+      </div>
+      <div class="card sol">
+        <h3>Registro interventi e tracciabilità documentale</h3>
+        <p>Ogni intervento viene registrato: data, orario, operatore, prodotti utilizzati e aree trattate. In caso di ispezione ASL, disponete subito della documentazione richiesta, senza dover ricostruire nulla a posteriori.</p>
+      </div>
+      <div class="card sol">
+        <h3>Operatori formati per l'ambito sanitario</h3>
+        <p>Il personale che entra nel vostro ambulatorio è formato sui rischi biologici, sull'uso dei DPI e sulle procedure di disinfezione previste per gli studi dentistici. Non improvvisiamo: applichiamo procedure.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="credentials">
+  <div class="container">
+    <h2>Perché Dundin Pulizie è una scelta solida</h2>
+    <ul>
+      <li>Operatività conforme al <strong>D.Lgs. 81/2008</strong> sulla salute e sicurezza nei luoghi di lavoro, con valutazione dei rischi specifici per gli ambienti sanitari.</li>
+      <li>Adesione ai <strong>protocolli ASL</strong> e alle linee guida dell'Istituto Superiore di Sanità per la sanificazione degli ambulatori odontoiatrici.</li>
+      <li>Conoscenza dei principi <strong>HACCP</strong> applicati alle aree di stoccaggio e ai locali accessori, dove richiesto.</li>
+      <li>Utilizzo esclusivo di prodotti <strong>Presidi Medico-Chirurgici (PMC)</strong> registrati al Ministero della Salute, con schede tecniche e di sicurezza sempre disponibili.</li>
+      <li>Specializzazione negli <strong>ambienti sanitari dell'Emilia-Romagna</strong>: lavoriamo con studi medici e ambulatori tra Parma e Fidenza.</li>
+      <li>Documentazione di ogni intervento per garantire <strong>tracciabilità completa</strong> in caso di verifica da parte degli organi di controllo.</li>
     </ul>
   </div>
 </section>
 
 <section>
   <div class="container">
-    <h2>Cosa dicono studi simili al vostro</h2>
-    <div class="testimonials">
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <p class="quote">"Abbiamo affidato a Dundin la sanificazione settimanale dei nostri tre riuniti. La differenza rispetto alla gestione interna è netta, soprattutto sul piano della documentazione: alla visita ispettiva dell'AUSL non abbiamo avuto alcuna osservazione."</p>
-        <p class="author">— Dott.ssa Chiara Bertolini, Studio Odontoiatrico Bertolini, Reggio Emilia</p>
+    <h2>Stima indicativa per il vostro studio</h2>
+    <div class="estimate-box">
+      <p>Tariffa oraria operatore qualificato</p>
+      <div class="rate">€20 <small>/ ora</small></div>
+      <div class="monthly">
+        <strong>Riferimento mensile per studi dentistici:</strong><br>
+        a partire da <strong>€480 / mese</strong>
       </div>
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <p class="quote">"Cercavamo un'impresa che capisse davvero la differenza tra pulire un ufficio e pulire un ambulatorio. Con Dundin abbiamo trovato puntualità, prodotti certificati e un registro interventi che ci tutela. Il personale clinico ora si occupa solo della clinica."</p>
-        <p class="author">— Dott. Marco Tagliavini, Centro Dentistico Tagliavini, Fidenza</p>
-      </div>
+      <p class="disclaimer">Stima basata su un protocollo standard per la nicchia. Il preventivo definitivo dipende dalla metratura effettiva, dal numero di postazioni e dalla frequenza degli interventi, da definire durante il sopralluogo gratuito presso il vostro ambulatorio.</p>
     </div>
   </div>
 </section>
 
-<section style="background:#f9fafc">
+<section class="cta">
   <div class="container">
-    <h2>Stima indicativa per uno studio odontoiatrico</h2>
-    <div class="price-box">
-      <p style="margin-bottom:24px;color:#cfd8e8">Esempio di calcolo per uno studio di circa 90 m² con 2 riuniti, sala d'attesa, reception, due bagni e zona sterilizzazione.</p>
-      <div class="price-row"><span>Tariffa base oraria</span><span>€ 20,00 / ora</span></div>
-      <div class="price-row"><span>Intervento standard serale (≈ 3 ore)</span><span>€ 60,00</span></div>
-      <div class="price-row"><span>Frequenza consigliata</span><span>3 volte / settimana</span></div>
-      <div class="price-row"><span>Documentazione e registro interventi</span><span>Inclusi</span></div>
-      <div class="price-row"><span>Stima mensile indicativa</span><span>€ 720,00 + IVA</span></div>
-    </div>
-    <p style="text-align:center;margin-top:18px;font-size:.92rem;color:#566378">Il preventivo definitivo viene formulato dopo un sopralluogo gratuito presso lo studio in Via Marchesi Luigi e Salvatore, 20.</p>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="cta">
-      <h2>Richiedete un sopralluogo gratuito</h2>
-      <p>Un nostro referente visiterà lo studio, valuterà gli spazi e proporrà un protocollo di sanificazione su misura, con preventivo dettagliato e senza impegno.</p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="https://wa.me/393330000000">💬 Scrivici su WhatsApp</a>
-        <a class="btn btn-outline" href="tel:+393330000000">📞 +39 333 000 0000</a>
-        <a class="btn btn-secondary" href="mailto:info@dundinpulizie.it?subject=Richiesta%20sopralluogo%20-%20Ambulatorio%20Gervasi%20Pedroni">✉️ info@dundinpulizie.it</a>
-      </div>
+    <h2>Prenotiamo un sopralluogo gratuito</h2>
+    <p>30 minuti in ambulatorio, fuori dall'orario clinico, per valutare gli spazi e costruire un protocollo su misura. Nessun impegno.</p>
+    <div class="btn-group">
+      <a class="btn btn-wa" href="https://wa.me/393330000000">💬 Scrivici su WhatsApp</a>
+      <a class="btn btn-phone" href="tel:+393330000000">📞 +39 333 000 0000</a>
+      <a class="btn btn-mail" href="mailto:info@dundinpulizie.it">✉️ info@dundinpulizie.it</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p><strong>Dundin Pulizie</strong> — Servizi di pulizia e sanificazione professionale</p>
-  <p>Emilia-Romagna · Zona di intervento: Parma e Fidenza</p>
-  <p>Tel. +39 333 000 0000 · info@dundinpulizie.it</p>
+  <div class="container">
+    <p><strong>Dundin Pulizie</strong> · Pulizie professionali per ambienti sanitari</p>
+    <p>Emilia-Romagna · Zona operativa: Parma e Fidenza</p>
+    <p style="margin-top:10px;">📞 +39 333 000 0000 · <a href="mailto:info@dundinpulizie.it">info@dundinpulizie.it</a></p>
+  </div>
 </footer>
 
 </body>
