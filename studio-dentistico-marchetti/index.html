@@ -9,94 +9,86 @@
 <style>
   body { font-family: 'Inter', sans-serif; color: #0F172A; }
   .font-serif { font-family: 'Fraunces', serif; }
-  .tabular-nums { font-variant-numeric: tabular-nums; }
+  .text-primary { color: #0F172A; }
+  .bg-primary { background-color: #0F172A; }
+  .text-accent { color: #0284C7; }
+  .bg-accent { background-color: #0284C7; }
+  .bg-accent-soft { background-color: rgba(2, 132, 199, 0.10); }
+  .bg-surface { background-color: #F8FAFC; }
+  .border-subtle { border-color: #E2E8F0; }
+  .text-muted { color: #64748B; }
+  .bg-success { background-color: #16A34A; }
+  .tabular { font-variant-numeric: tabular-nums; }
   html { scroll-behavior: smooth; }
 </style>
 </head>
-<body class="bg-white antialiased">
+<body class="bg-white">
 
-<!-- HERO -->
-<section class="relative min-h-[85vh] flex items-center justify-center bg-cover bg-center" style="background-image: linear-gradient(rgba(15,23,42,0.65), rgba(15,23,42,0.55)), url('./hero.jpg');">
-  <div class="max-w-6xl mx-auto px-6 lg:px-8 py-24 w-full">
-    <div class="max-w-3xl">
-      <p class="uppercase tracking-widest text-xs font-medium mb-6" style="color: #38BDF8; letter-spacing: 0.2em;">Pulizie sanitarie · Parma</p>
-      <h1 class="font-serif text-white text-4xl sm:text-5xl lg:text-6xl font-medium leading-tight mb-6">
-        Studio Dentistico Marchetti: il vostro 4.9 su Google si difende anche con la pulizia degli spazi.
-      </h1>
-      <p class="text-white/85 text-lg lg:text-xl leading-relaxed mb-10 max-w-2xl">
-        Protocolli di sanificazione conformi al D.Lgs. 81/2008, documentazione tracciabile per le verifiche ASL e un partner stabile a pochi minuti da Strada Nino Bixio.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4">
-        <a href="https://wa.me/393330000000?text=Buongiorno%2C+sono+di+Studio+Dentistico+Marchetti.+Vorrei+richiedere+un+sopralluogo+gratuito." class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-white font-medium text-base transition hover:opacity-90" style="background-color: #16A34A;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
-          Scrivici su WhatsApp
-        </a>
-        <a href="mailto:info@dundinpulizie.it?subject=Richiesta+sopralluogo+-+Studio+Dentistico+Marchetti" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl border border-white/40 text-white font-medium text-base transition hover:bg-white/10">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          Richiedi un sopralluogo gratuito
-        </a>
-      </div>
+<!-- 1. HERO -->
+<section class="relative min-h-[85vh] flex items-center justify-center" style="background-image: linear-gradient(rgba(15,23,42,0.55), rgba(15,23,42,0.55)), url('./hero.jpg'); background-size: cover; background-position: center;">
+  <div class="max-w-6xl mx-auto px-6 lg:px-8 py-24 text-center">
+    <p class="text-[11px] uppercase tracking-[0.2em] text-white/80 mb-8" style="color:#7DD3FC;">Pulizie sanitarie · Parma</p>
+    <h1 class="font-serif font-medium text-white text-[36px] sm:text-[48px] lg:text-[60px] leading-tight max-w-3xl mx-auto mb-8">
+      Studio Dentistico Marchetti: il vostro 4.9 su Google si difende anche con la pulizia degli spazi.
+    </h1>
+    <p class="text-lg lg:text-xl text-white/85 max-w-2xl mx-auto mb-10 leading-relaxed">
+      Protocolli di sanificazione conformi al D.Lgs. 81/2008, documentazione pronta per i controlli ASL e un partner stabile a pochi minuti dal vostro studio.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a href="https://wa.me/393330000000?text=Buongiorno%2C+sono+di+Studio+Dentistico+Marchetti.+Vorrei+richiedere+un+sopralluogo+gratuito." class="inline-flex items-center gap-2 bg-success text-white px-8 py-4 rounded-xl font-medium hover:opacity-90 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+        Scrivici su WhatsApp
+      </a>
+      <a href="mailto:info@dundinpulizie.it?subject=Richiesta+sopralluogo+-+Studio+Dentistico+Marchetti" class="inline-flex items-center gap-2 border border-white/60 text-white px-8 py-4 rounded-xl font-medium hover:bg-white/10 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        Richiedi un sopralluogo gratuito
+      </a>
     </div>
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-50">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
     </div>
   </div>
 </section>
 
-<!-- CRITICITÀ -->
+<!-- 2. CRITICITÀ -->
 <section class="py-24 lg:py-32 bg-white">
   <div class="max-w-6xl mx-auto px-6 lg:px-8">
     <div class="max-w-2xl mb-16">
-      <p class="uppercase tracking-widest text-xs font-medium mb-4" style="color: #0284C7; letter-spacing: 0.2em;">Criticità del settore</p>
-      <h2 class="font-serif text-3xl lg:text-5xl font-medium leading-tight mb-6" style="color: #0F172A;">
-        Uno studio odontoiatrico non può permettersi una pulizia generica.
-      </h2>
-      <p class="text-lg leading-relaxed" style="color: #64748B;">
-        Tre punti che, nella nostra esperienza con studi medici di Parma e Fidenza, fanno la differenza tra una sede a norma e una sede esposta.
-      </p>
+      <p class="text-[11px] uppercase tracking-[0.2em] text-accent mb-5">Criticità del settore</p>
+      <h2 class="font-serif font-medium text-[30px] lg:text-[44px] text-primary leading-tight mb-6">Uno studio dentistico non si pulisce: si sanifica secondo norma.</h2>
+      <p class="text-lg text-muted leading-relaxed">I rischi reali per uno studio medico privato non riguardano la "pulizia visiva", ma la conformità documentale e la tracciabilità degli interventi.</p>
     </div>
 
-    <div class="grid lg:grid-cols-3 gap-8">
-      <!-- Block 1 — Dark, span 2 -->
-      <div class="lg:col-span-2 p-10 lg:p-12 rounded-xl relative overflow-hidden" style="background-color: #0F172A;">
-        <span class="absolute top-6 right-8 font-serif text-7xl lg:text-8xl font-medium opacity-10 text-white">01</span>
-        <div class="relative">
-          <div class="mb-6" style="color: #0284C7;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>
-          </div>
-          <h3 class="text-white text-xl font-semibold mb-4">Conformità al D.Lgs. 81/2008 e protocolli sanitari</h3>
-          <p class="text-white/75 leading-relaxed max-w-xl">
-            Gli ambulatori odontoiatrici operano sotto vincoli precisi: gestione del rischio biologico, separazione delle aree, frequenze minime di sanificazione delle superfici a contatto con il paziente. Una pulizia eseguita "a vista" non basta più — servono procedure scritte, prodotti certificati e registrazioni.
-          </p>
+    <div class="grid lg:grid-cols-3 gap-6">
+      <div class="lg:col-span-2 bg-primary text-white p-10 lg:p-12 rounded-xl relative overflow-hidden">
+        <div class="absolute top-8 right-10 font-serif text-[72px] leading-none" style="color:#0284C7; opacity:0.25;">01</div>
+        <div class="text-accent mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>
         </div>
+        <h3 class="text-xl font-semibold mb-4 max-w-md">Conformità al D.Lgs. 81/2008 e ai protocolli ASL</h3>
+        <p class="text-white/75 leading-relaxed max-w-lg">L'ambulatorio medico ricade in un quadro normativo specifico: procedure di disinfezione differenziate per aree cliniche, sterilizzazione strumentale e gestione documentale degli interventi. Una pulizia "generica" non basta — e in caso di controllo, non si argomenta.</p>
       </div>
 
-      <!-- Block 2 -->
-      <div class="p-10 rounded-xl border relative" style="background-color: #F8FAFC; border-color: #E2E8F0;">
-        <span class="absolute top-4 right-6 font-serif text-6xl font-medium opacity-15" style="color: #0F172A;">02</span>
-        <div class="mb-6" style="color: #0284C7;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+      <div class="bg-surface p-10 rounded-xl border border-subtle">
+        <div class="text-accent mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
         </div>
-        <h3 class="text-lg font-semibold mb-3" style="color: #0F172A;">Verifiche ASL e sanzioni</h3>
-        <p class="leading-relaxed text-sm" style="color: #64748B;">
-          Un'ispezione che rileva carenze igieniche o assenza di registri operativi comporta sanzioni amministrative e, nei casi gravi, sospensioni temporanee dell'attività.
-        </p>
+        <div class="font-serif text-[56px] leading-none mb-3" style="color:#0284C7; opacity:0.15;">02</div>
+        <h3 class="text-lg font-semibold mb-3 text-primary">Verifiche ASL e sanzioni</h3>
+        <p class="text-muted leading-relaxed">Un'ispezione senza registro degli interventi o senza schede di sicurezza dei prodotti utilizzati espone a sanzioni concrete e a sospensione dell'attività.</p>
       </div>
 
-      <!-- Block 3 -->
-      <div class="p-10 rounded-xl border relative lg:col-span-3" style="background-color: #F8FAFC; border-color: #E2E8F0;">
+      <div class="bg-surface p-10 rounded-xl border border-subtle lg:col-span-3 lg:p-12">
         <div class="grid lg:grid-cols-[auto_1fr] gap-8 items-start">
-          <div class="flex items-start gap-6">
-            <span class="font-serif text-6xl font-medium opacity-15 leading-none" style="color: #0F172A;">03</span>
-            <div style="color: #0284C7;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/></svg>
-            </div>
-          </div>
           <div>
-            <h3 class="text-lg font-semibold mb-3" style="color: #0F172A;">Documentazione tracciabile per gli organi di controllo</h3>
-            <p class="leading-relaxed" style="color: #64748B;">
-              Registri di intervento, schede tecniche dei prodotti utilizzati, frequenze documentate: senza questa traccia, dimostrare la conformità in sede di verifica diventa un esercizio difficile. La pulizia non documentata, formalmente, non esiste.
-            </p>
+            <div class="text-accent mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/></svg>
+            </div>
+            <div class="font-serif text-[56px] leading-none" style="color:#0284C7; opacity:0.15;">03</div>
+          </div>
+          <div class="max-w-2xl">
+            <h3 class="text-lg font-semibold mb-3 text-primary">Percezione del paziente e reputazione</h3>
+            <p class="text-muted leading-relaxed">Un 4.9 su Google con 42 recensioni è il risultato di anni di attenzione al dettaglio. La percezione dell'ambiente — sala d'attesa, riuniti, bagni, superfici di contatto — entra direttamente nella valutazione del paziente. Sporcizia visibile o odori chimici aggressivi possono compromettere settimane di lavoro clinico.</p>
           </div>
         </div>
       </div>
@@ -104,250 +96,202 @@
   </div>
 </section>
 
-<!-- PROCESS IMAGE BLOCK -->
-<section class="relative bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./process.jpg');">
-  <div class="max-w-6xl mx-auto px-6 lg:px-8 py-24 lg:py-32">
-    <div class="grid lg:grid-cols-2 gap-0 items-stretch">
-      <div class="hidden lg:block"></div>
-      <div class="bg-white p-10 lg:p-16 rounded-xl">
-        <p class="uppercase tracking-widest text-xs font-medium mb-4" style="color: #0284C7; letter-spacing: 0.2em;">Il nostro metodo</p>
-        <h2 class="font-serif text-3xl lg:text-4xl font-medium leading-tight mb-6" style="color: #0F172A;">
-          Sanificazione sanitaria, non pulizia ordinaria.
-        </h2>
-        <p class="text-base leading-relaxed mb-8" style="color: #64748B;">
-          Lavoriamo per studi medici e ambulatori in Emilia-Romagna applicando protocolli pensati per ambienti sanitari. Ogni intervento è strutturato, ripetibile e tracciato.
-        </p>
-        <ul class="space-y-4">
-          <li class="flex items-start gap-3">
-            <span class="mt-1 flex-shrink-0" style="color: #0284C7;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-            </span>
-            <span class="text-sm leading-relaxed" style="color: #0F172A;">Disinfezione di riuniti odontoiatrici, superfici e maniglieria con prodotti PMC</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="mt-1 flex-shrink-0" style="color: #0284C7;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-            </span>
-            <span class="text-sm leading-relaxed" style="color: #0F172A;">Separazione operativa tra aree cliniche, sala d'attesa e servizi</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="mt-1 flex-shrink-0" style="color: #0284C7;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-            </span>
-            <span class="text-sm leading-relaxed" style="color: #0F172A;">Registro interventi consultabile e schede tecniche dei prodotti</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="mt-1 flex-shrink-0" style="color: #0284C7;">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
-            </span>
-            <span class="text-sm leading-relaxed" style="color: #0F172A;">Operatori formati al rischio biologico e DPI dedicati</span>
-          </li>
-        </ul>
-      </div>
+<!-- 3. PROCESS IMAGE BLOCK -->
+<section class="bg-surface">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2">
+    <div class="min-h-[400px] lg:min-h-[600px]" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('./process.jpg'); background-size: cover; background-position: center;"></div>
+    <div class="bg-white p-10 lg:p-16 flex flex-col justify-center">
+      <p class="text-[11px] uppercase tracking-[0.2em] text-accent mb-5">Il nostro metodo</p>
+      <h2 class="font-serif font-medium text-[28px] lg:text-[40px] text-primary leading-tight mb-6">Protocolli scritti, prodotti dichiarati, interventi tracciati.</h2>
+      <p class="text-muted leading-relaxed mb-4">Per uno studio dentistico non basta "passare a pulire". Lavoriamo con un protocollo dedicato alle strutture sanitarie, separato per area di rischio.</p>
+      <p class="text-muted leading-relaxed mb-8">Ogni intervento viene registrato e archiviato: in caso di controllo ASL, la documentazione è già pronta.</p>
+      <ul class="space-y-4">
+        <li class="flex items-start gap-3">
+          <span class="text-accent mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></span>
+          <span class="text-primary">Disinfezione differenziata: sala d'attesa, riuniti, bagni, area sterilizzazione</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-accent mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></span>
+          <span class="text-primary">Prodotti PMC con schede tecniche e schede di sicurezza fornite</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-accent mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></span>
+          <span class="text-primary">Registro interventi firmato, archiviato e disponibile su richiesta</span>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-accent mt-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg></span>
+          <span class="text-primary">Personale formato sui rischi specifici dell'ambiente sanitario</span>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- RISPOSTA OPERATIVA -->
+<!-- 4. RISPOSTA OPERATIVA -->
 <section class="py-24 lg:py-32 bg-white">
   <div class="max-w-6xl mx-auto px-6 lg:px-8">
     <div class="max-w-2xl mb-16">
-      <p class="uppercase tracking-widest text-xs font-medium mb-4" style="color: #0284C7; letter-spacing: 0.2em;">La risposta operativa</p>
-      <h2 class="font-serif text-3xl lg:text-5xl font-medium leading-tight" style="color: #0F172A;">
-        Il servizio pensato per lo Studio Marchetti.
-      </h2>
+      <p class="text-[11px] uppercase tracking-[0.2em] text-accent mb-5">La nostra risposta</p>
+      <h2 class="font-serif font-medium text-[30px] lg:text-[44px] text-primary leading-tight mb-6">Il servizio pensato per lo Studio Marchetti.</h2>
+      <p class="text-lg text-muted leading-relaxed">Sei punti operativi che traducono la normativa in lavoro quotidiano, senza interferire con l'agenda clinica.</p>
     </div>
 
-    <div class="grid lg:grid-cols-2 gap-x-12 gap-y-12">
+    <div class="grid lg:grid-cols-2 gap-x-12 gap-y-10">
       <div class="flex gap-5">
-        <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center" style="background-color: rgba(2,132,199,0.1); color: #0284C7;">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent-soft flex items-center justify-center text-accent">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
         </div>
         <div>
-          <h3 class="text-lg font-semibold mb-2" style="color: #0F172A;">Protocollo conforme al D.Lgs. 81/2008</h3>
-          <p class="leading-relaxed text-sm" style="color: #64748B;">
-            Procedure scritte, frequenze definite per ciascuna area e responsabilità chiare. Ogni passaggio è documentato per essere mostrato in caso di verifica.
-          </p>
+          <h3 class="text-lg font-semibold text-primary mb-2">Conformità D.Lgs. 81/2008</h3>
+          <p class="text-muted leading-relaxed">Valutazione del rischio biologico, DVR coerente, DUVRI per il coordinamento delle attività con il vostro personale.</p>
         </div>
       </div>
 
       <div class="flex gap-5">
-        <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center" style="background-color: rgba(2,132,199,0.1); color: #0284C7;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold mb-2" style="color: #0F172A;">Disinfezione di poltrone e superfici cliniche</h3>
-          <p class="leading-relaxed text-sm" style="color: #64748B;">
-            Trattamento dedicato per riuniti, lampade scialitiche, piani di lavoro e zone di contatto frequente, con prodotti registrati come Presidi Medico-Chirurgici.
-          </p>
-        </div>
-      </div>
-
-      <div class="flex gap-5">
-        <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center" style="background-color: rgba(2,132,199,0.1); color: #0284C7;">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent-soft flex items-center justify-center text-accent">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/></svg>
         </div>
         <div>
-          <h3 class="text-lg font-semibold mb-2" style="color: #0F172A;">Registro interventi consultabile</h3>
-          <p class="leading-relaxed text-sm" style="color: #64748B;">
-            Per ogni intervento: data, operatore, aree trattate, prodotti impiegati. Una traccia che semplifica i rapporti con ASL e medico competente.
-          </p>
+          <h3 class="text-lg font-semibold text-primary mb-2">Documentazione per controlli ASL</h3>
+          <p class="text-muted leading-relaxed">Registro interventi, schede tecniche e schede di sicurezza dei prodotti raccolti in un fascicolo unico, sempre aggiornato.</p>
         </div>
       </div>
 
       <div class="flex gap-5">
-        <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center" style="background-color: rgba(2,132,199,0.1); color: #0284C7;">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent-soft flex items-center justify-center text-accent">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-primary mb-2">Disinfezione mirata dei riuniti</h3>
+          <p class="text-muted leading-relaxed">Pulizia delle poltrone, lampade scialitiche, sputacchiere e superfici di contatto con prodotti compatibili con il settore odontoiatrico.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-5">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent-soft flex items-center justify-center text-accent">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
         <div>
-          <h3 class="text-lg font-semibold mb-2" style="color: #0F172A;">Orari adattati all'attività clinica</h3>
-          <p class="leading-relaxed text-sm" style="color: #64748B;">
-            Interventi pianificati prima dell'apertura o dopo la chiusura, senza interferire con l'agenda dei pazienti né con i tempi dei vostri operatori.
-          </p>
+          <h3 class="text-lg font-semibold text-primary mb-2">Interventi fuori orario clinico</h3>
+          <p class="text-muted leading-relaxed">Programmazione concordata in base all'agenda dello studio — prima dell'apertura o dopo l'ultima visita, senza interferenze con i pazienti.</p>
         </div>
       </div>
 
       <div class="flex gap-5">
-        <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center" style="background-color: rgba(2,132,199,0.1); color: #0284C7;">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent-soft flex items-center justify-center text-accent">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-primary mb-2">Operatori fissi assegnati</h3>
+          <p class="text-muted leading-relaxed">Lo stesso team conosce lo studio, le aree critiche e le priorità. Niente rotazione continua di personale sconosciuto.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-5">
+        <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent-soft flex items-center justify-center text-accent">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
         </div>
         <div>
-          <h3 class="text-lg font-semibold mb-2" style="color: #0F172A;">Operatori formati al rischio biologico</h3>
-          <p class="leading-relaxed text-sm" style="color: #64748B;">
-            Il personale che entra nel vostro studio conosce procedure, DPI e modalità di gestione dei materiali in ambiente sanitario.
-          </p>
-        </div>
-      </div>
-
-      <div class="flex gap-5">
-        <div class="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center" style="background-color: rgba(2,132,199,0.1); color: #0284C7;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold mb-2" style="color: #0F172A;">Referente unico e tempi di risposta brevi</h3>
-          <p class="leading-relaxed text-sm" style="color: #64748B;">
-            Una sola persona di riferimento per ogni esigenza: cambi di turno, interventi straordinari, segnalazioni. Niente call center.
-          </p>
+          <h3 class="text-lg font-semibold text-primary mb-2">Referente unico per il vostro studio</h3>
+          <p class="text-muted leading-relaxed">Un solo numero diretto per segnalazioni, modifiche di programma o richieste straordinarie. Risposta entro la giornata lavorativa.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PERCHÉ DUNDIN -->
-<section class="py-24 lg:py-32" style="background-color: #F8FAFC;">
+<!-- 5. PERCHÉ DUNDIN -->
+<section class="py-24 lg:py-32 bg-surface">
   <div class="max-w-6xl mx-auto px-6 lg:px-8">
     <div class="max-w-2xl mb-16">
-      <p class="uppercase tracking-widest text-xs font-medium mb-4" style="color: #0284C7; letter-spacing: 0.2em;">Perché Dundin Pulizie</p>
-      <h2 class="font-serif text-3xl lg:text-5xl font-medium leading-tight mb-6" style="color: #0F172A;">
-        Specializzati, vicini, documentati.
-      </h2>
-      <p class="text-lg leading-relaxed" style="color: #64748B;">
-        Lavoriamo con studi medici e dentistici a Parma e Fidenza. Una scelta operativa, non commerciale.
-      </p>
+      <p class="text-[11px] uppercase tracking-[0.2em] text-accent mb-5">Perché Dundin Pulizie</p>
+      <h2 class="font-serif font-medium text-[30px] lg:text-[44px] text-primary leading-tight">Tre ragioni concrete, nessuna promessa generica.</h2>
     </div>
 
     <div class="grid lg:grid-cols-3 gap-12">
       <div>
-        <div class="mb-6" style="color: #0284C7;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+        <div class="text-accent mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
         </div>
-        <h3 class="text-lg font-semibold mb-3" style="color: #0F172A;">Specializzazione sanitaria</h3>
-        <p class="leading-relaxed text-sm" style="color: #64748B;">
-          Non facciamo "anche" gli studi medici. Protocolli, prodotti e formazione sono pensati per ambienti soggetti a vincoli normativi precisi.
-        </p>
+        <h3 class="text-lg font-semibold text-primary mb-3">Specializzazione sanitaria</h3>
+        <p class="text-muted leading-relaxed">Lavoriamo con studi medici e dentistici a Parma e Fidenza. Conosciamo la differenza tra una pulizia d'ufficio e una sanificazione clinica.</p>
       </div>
 
       <div>
-        <div class="mb-6" style="color: #0284C7;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
-        </div>
-        <h3 class="text-lg font-semibold mb-3" style="color: #0F172A;">Operatività locale</h3>
-        <p class="leading-relaxed text-sm" style="color: #64748B;">
-          Strada Nino Bixio è nella nostra zona operativa. Tempi di risposta brevi e interventi straordinari gestibili in giornata.
-        </p>
+        <div class="font-serif text-accent text-[56px] leading-none mb-6 font-medium tabular">15′</div>
+        <h3 class="text-lg font-semibold text-primary mb-3">A 15 minuti dal vostro studio</h3>
+        <p class="text-muted leading-relaxed">La nostra base operativa copre Parma e Fidenza. Logistica semplice, tempi di risposta brevi, niente trasferte caricate sul preventivo.</p>
       </div>
 
       <div>
-        <div class="mb-6" style="color: #0284C7;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/></svg>
+        <div class="text-accent mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/></svg>
         </div>
-        <h3 class="text-lg font-semibold mb-3" style="color: #0F172A;">Tutto documentato</h3>
-        <p class="leading-relaxed text-sm" style="color: #64748B;">
-          Schede tecniche, registri, protocolli scritti. Quello che facciamo lo possiamo dimostrare — è il primo requisito che chiede chi controlla.
-        </p>
+        <h3 class="text-lg font-semibold text-primary mb-3">Tracciabilità documentale</h3>
+        <p class="text-muted leading-relaxed">Ogni intervento è registrato e archiviato. In caso di controllo, il fascicolo è già pronto — non serve ricostruire nulla a posteriori.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- STIMA INDICATIVA -->
-<section class="py-24 lg:py-32" style="background-color: #0F172A;">
-  <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-    <p class="uppercase tracking-widest text-xs font-medium mb-6" style="color: #38BDF8; letter-spacing: 0.2em;">Stima indicativa</p>
-    <h2 class="font-serif text-3xl lg:text-5xl font-medium leading-tight text-white mb-12">
-      Una proposta dedicata allo Studio Marchetti.
-    </h2>
+<!-- 6. STIMA INDICATIVA -->
+<section class="py-24 lg:py-32 bg-primary text-white">
+  <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center">
+    <p class="text-[11px] uppercase tracking-[0.2em] mb-6" style="color:#7DD3FC;">Stima indicativa</p>
+    <h2 class="font-serif font-medium text-[30px] lg:text-[44px] leading-tight mb-12">Una proposta dedicata allo Studio Marchetti.</h2>
 
-    <div class="flex items-baseline justify-center gap-2 mb-4">
-      <span class="font-serif font-semibold tabular-nums text-6xl lg:text-7xl" style="color: #38BDF8;">€20</span>
+    <div class="flex items-baseline justify-center gap-3 mb-4">
+      <span class="font-medium tabular" style="color:#0284C7; font-size: 72px; line-height: 1;">€20</span>
       <span class="text-lg text-white/70">/ora</span>
     </div>
+    <p class="text-xl text-white/90 mb-10">Tariffa di riferimento per la nicchia odontoiatrica: <span class="font-semibold text-white">circa €480/mese</span></p>
 
-    <p class="text-white/85 text-lg mb-10">
-      Tariffa di riferimento per la nicchia odontoiatrica: <span class="text-white font-medium tabular-nums">~ €480 / mese</span>
-    </p>
-
-    <p class="text-sm italic max-w-2xl mx-auto leading-relaxed text-white/60">
-      Stima basata su un protocollo standard per studi dentistici. Il preventivo definitivo dipende dalla metratura effettiva, dal numero di riuniti e dalla frequenza degli interventi, da definire durante un sopralluogo gratuito presso la vostra sede in Strada Nino Bixio 39, Parma.
+    <p class="text-sm text-white/60 italic max-w-xl mx-auto leading-relaxed">
+      Stima basata su un protocollo standard per studi dentistici. Il preventivo definitivo viene formulato dopo un sopralluogo gratuito presso la vostra sede in Str. Nino Bixio 39, Parma, e dipende dalla metratura effettiva, dal numero di riuniti e dalla frequenza degli interventi.
     </p>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section class="py-24 lg:py-32" style="background-color: #F8FAFC;">
+<!-- 7. FINAL CTA -->
+<section class="py-24 lg:py-32 bg-surface">
   <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center">
-    <h2 class="font-serif text-3xl lg:text-5xl font-medium leading-tight mb-6" style="color: #0F172A;">
-      Un sopralluogo, una proposta scritta. Senza impegno.
-    </h2>
-    <p class="text-lg leading-relaxed mb-12 max-w-2xl mx-auto" style="color: #64748B;">
-      Veniamo nel vostro studio, valutiamo gli spazi e le frequenze necessarie e vi consegniamo una proposta operativa con protocolli e costi precisi.
-    </p>
+    <h2 class="font-serif font-medium text-[30px] lg:text-[44px] text-primary leading-tight mb-6 max-w-2xl mx-auto">Parliamone, senza impegno.</h2>
+    <p class="text-lg text-muted leading-relaxed mb-12 max-w-xl mx-auto">Un sopralluogo gratuito presso lo studio in Str. Nino Bixio è sufficiente per consegnarvi una proposta scritta, dettagliata e coerente con la normativa.</p>
 
     <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
-      <a href="https://wa.me/393330000000?text=Buongiorno%2C+sono+di+Studio+Dentistico+Marchetti.+Vorrei+richiedere+un+sopralluogo+gratuito." class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl text-white font-medium transition hover:opacity-90 w-full sm:w-auto" style="background-color: #16A34A;">
+      <a href="https://wa.me/393330000000?text=Buongiorno%2C+sono+di+Studio+Dentistico+Marchetti.+Vorrei+richiedere+un+sopralluogo+gratuito." class="inline-flex items-center gap-2 bg-success text-white px-8 py-4 rounded-xl font-medium hover:opacity-90 transition">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
         Scrivici su WhatsApp
       </a>
-      <a href="tel:+393330000000" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl border font-medium transition hover:bg-white w-full sm:w-auto" style="border-color: #0284C7; color: #0284C7;">
+      <a href="tel:+393330000000" class="inline-flex items-center gap-2 border border-accent text-accent px-8 py-4 rounded-xl font-medium hover:bg-accent-soft transition">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         Chiama ora · +39 333 000 0000
       </a>
     </div>
 
-    <a href="mailto:info@dundinpulizie.it?subject=Richiesta+sopralluogo+-+Studio+Dentistico+Marchetti" class="inline-flex items-center gap-2 text-sm font-medium underline-offset-4 hover:underline" style="color: #0284C7;">
+    <a href="mailto:info@dundinpulizie.it?subject=Richiesta+sopralluogo+-+Studio+Dentistico+Marchetti" class="inline-flex items-center gap-2 text-accent font-medium hover:underline">
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
       info@dundinpulizie.it
     </a>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="py-12" style="background-color: #0F172A;">
+<!-- 8. FOOTER -->
+<footer class="bg-primary text-white py-16">
   <div class="max-w-6xl mx-auto px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row justify-between items-start gap-6 text-sm">
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
       <div>
-        <p class="font-serif text-xl font-medium text-white mb-2">Dundin Pulizie</p>
-        <p class="text-white/60">Pulizie professionali · Emilia-Romagna</p>
+        <p class="font-serif text-2xl font-medium mb-2">Dundin Pulizie</p>
+        <p class="text-white/60">Servizi di pulizia e sanificazione professionale · Emilia-Romagna</p>
         <p class="text-white/60">Zona operativa: Parma e Fidenza</p>
       </div>
-      <div class="text-white/60 md:text-right">
+      <div class="md:text-right space-y-1 text-white/70">
         <p>+39 333 000 0000</p>
         <p>info@dundinpulizie.it</p>
       </div>
     </div>
-    <div class="border-t border-white/10 mt-10 pt-6 text-xs text-white/40">
-      © Dundin Pulizie · Tutti i diritti riservati
+    <div class="border-t border-white/10 pt-6 text-[12px] text-white/50">
+      Sito realizzato con <a href="https://dundin-landings.pages.dev/atto" class="text-white/50 hover:text-white/70">Atto</a> — Dundin Studio · info@checkitaly.pro
     </div>
   </div>
 </footer>
