@@ -1,0 +1,4 @@
+
+# Preview-файлы от Claude-сессий, не для коммита
+index.preview.html
+*.preview.html
